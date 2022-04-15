@@ -37,7 +37,7 @@ static void RenderSceneCB()
 	World[2][0] = 0.0f; World[2][1] = 0.0f; World[2][2] = sinf(Scale); World[2][3] = 0.0f;
 	World[3][0] = 0.0f; World[3][1] = 0.0f; World[3][2] = 0.0f; World[3][3] = 1.0f;
 
-	Vertices[0] = glm::vec4(Vertices[0], 1.0f) * World; //Преобразование вектора по матрице
+	Vertices[0] = glm::vec4(Vertices[0], 1.0f) * World; //Преобразование верешин по матрице
  	Vertices[1] = glm::vec4(Vertices[1], 1.0f) * World;
 	Vertices[2] = glm::vec4(Vertices[2], 1.0f) * World;
 	glGenBuffers(1, &VBO);
